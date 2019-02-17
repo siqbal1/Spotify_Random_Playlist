@@ -9,7 +9,7 @@ from randomizer.models import *
 
 #constants
 CLIENT_ID = "444129c7971349528df2f43f4e191974"
-SECRET_KEY = "9b56f166064847e6b70869fe7e9f51c9"
+#must add secret id from spotify api login
 ID_LENGTH = 22
 CHAR_RANGE = string.ascii_lowercase + string.ascii_uppercase + string.digits
 NUM_RANGE = string.digits
