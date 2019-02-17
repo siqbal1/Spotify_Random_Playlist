@@ -8,8 +8,8 @@ import json
 from randomizer.models import *
 
 #constants
-CLIENT_ID = "444129c7971349528df2f43f4e191974"
-#removed secret key, get from spotify api login
+#removed CLIENT_ID, get from spotify api login
+#removed SECRET_KEY, get from spotify api login
 
 ID_LENGTH = 22
 CHAR_RANGE = string.ascii_lowercase + string.ascii_uppercase + string.digits
