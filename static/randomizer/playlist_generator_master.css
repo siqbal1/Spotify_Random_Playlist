@@ -1,0 +1,32 @@
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.loader {
+  display: none;
+  margin : auto;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #4747d1;
+  border-right: 10px solid #3333cc;
+  border-bottom: 10px solid #2e2eb8;
+  border-left: 10px solid #2929a3;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
