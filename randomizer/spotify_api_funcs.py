@@ -6,6 +6,7 @@ import random
 import string
 import json
 from randomizer.models import *
+from datetime import date
 
 #constants
 #removed CLIENT_ID, get from spotify api login
@@ -250,7 +251,7 @@ def get_user_info(access_token):
     return response
 
 
-def make_user_playlist(user_id, access_token, name=("Random Playlist" + str(randint(0, 100)))):
+def make_user_playlist(user_id, access_token, name="Random Playlist "):
 
     """
     INPUT: user_id, access_token, playlist_name (optional)
@@ -263,8 +264,10 @@ def make_user_playlist(user_id, access_token, name=("Random Playlist" + str(rand
 
     url_headers = get_user_auth_header(access_token)
 
+    name += str(date.today()) + " " + str(random.randint(0, 100)) 
+
     url_parameters = {
-        'name' : 'Random Playlist',
+        'name' : name,
     }
 
     url_parameters = json.dumps(url_parameters)
