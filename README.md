@@ -1,5 +1,4 @@
 spotifyrandomplaylist.com
-(website currently down to add mobile support)
 
 The purpose of this website is to allow spotify users to experiment with different types of music. By generating a playlist of random songs with no preference for genre, users will be exposed to a wide variety of music and may find new music genres that they would be interested in. On the homepage users can browse through a set of random tracks and play their previews, this allows users to sample different songs and check if they fit their music profile. If a user wants to generate a playlist of random tracks, the web app will utilize the Spotify Web API to create a playlist on the users spotify account.
 
